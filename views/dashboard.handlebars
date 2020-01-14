@@ -69,7 +69,8 @@
                                             placeholder="Tired of sobby melodramas and stupid comedies? Why not watch a film with a difference? American Beauty by Sam Mendes is both a drama and a comedy, which definitely absorbed the best features of the genres, creating a powerful and mind-boggling cocktail of love, hatred, sinful passion, rebellion, loneliness, fear and total liberation."></textarea>
                                     </div>
                                     <div class="review-submit">
-                                        <button type="button" id="submit" class="btn btn-danger">Submit</button>
+                                        <button type="button" id="reviewSubmitBtn"
+                                            class="btn btn-danger">Submit</button>
                                     </div>
                                 </form>
                             </div>
@@ -109,16 +110,11 @@
     </div>
     <div class="row row-pop-results">
         <div class="col-6 col-md-4 col-lg-3 mb-4">
+            {{!-- Most Popular Card Start --}}
             <div class="card mx-auto">
                 <div class="card-body">
                     <h5 class="card-title">Schitt's Creek</h5>
-                    <div class="platforms">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                    </div>
-                    <hr>
+
                     <p class="card-text">In the sitcom "Schitt's Creek," a wealthy couple -- video store magnate
                         Johnny
                         and his soap opera star wife Moira <span id="dots">...</span><span id="more">-- suddenly
@@ -129,26 +125,40 @@
                             spoiled
                             children in tow and their pampered lives behind them, the Rose family is forced to face
                             their newfound poverty head-on and come together as a family to survive.</span>
-                        <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
-                            more</button>
+                        {{!-- <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
+                            more</button> --}}
+
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#popularCardModal"
+                            id="myBtn">
+                            Read more
+                        </button>
                     </p>
-
-
-                    <a href="#" class="card-link centered">Watch Now!</a>
+                    <hr>
+                    <p>Watch now on:</p>
+                    <div class="platforms">
+                        <a href="https://www.netflix.com/title/80036165" target="_blank"><img
+                                src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left"
+                                alt="Netflix"></a>
+                        <a href="https://play.google.com/store/tv/show?amp=&amp=&cdid=tvseason-tA4HgPLTK0a3r_BGVPCMuQ&gdid=tvepisode-tMn7WbYtC4Y&gl=US&hl=en&id=HlmO2RZtk_E"
+                            target="_blank"><img src="/assets/platforms/google.png" height="40px"
+                                class="rounded float-left" alt="Google"></a>
+                        <a href="https://www.amazon.com/gp/product/B00X9LWQ9K?creativeASIN=B00X9LWQ9K&ie=UTF8&linkCode=xm2&tag=utellycom00-21"
+                            target="_blank"><img src="/assets/platforms/prime.png" height="40px"
+                                class="rounded float-left" alt="Prime"></a>
+                        <a href="https://www.youtube.com/channel/UCVmFdp0CSRyvSCAsQjwkRuA" target="_blank"><img
+                                src="/assets/platforms/youtube.png" height="40px" class="rounded float-left"
+                                alt="YouTube"></a>
+                    </div>
                 </div>
             </div>
+            {{!-- Most Popular Card End --}}
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-4">
+            {{!-- Most Popular Card Start --}}
             <div class="card mx-auto">
                 <div class="card-body">
                     <h5 class="card-title">Schitt's Creek</h5>
-                    <div class="platforms">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                    </div>
-                    <hr>
+
                     <p class="card-text">In the sitcom "Schitt's Creek," a wealthy couple -- video store magnate
                         Johnny
                         and his soap opera star wife Moira <span id="dots">...</span><span id="more">-- suddenly
@@ -159,26 +169,40 @@
                             spoiled
                             children in tow and their pampered lives behind them, the Rose family is forced to face
                             their newfound poverty head-on and come together as a family to survive.</span>
-                        <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
-                            more</button>
+                        {{!-- <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
+                            more</button> --}}
+
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#popularCardModal"
+                            id="myBtn">
+                            Read more
+                        </button>
                     </p>
-
-
-                    <a href="#" class="card-link centered">Watch Now!</a>
+                    <hr>
+                    <p>Watch now on:</p>
+                    <div class="platforms">
+                        <a href="https://www.netflix.com/title/80036165" target="_blank"><img
+                                src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left"
+                                alt="Netflix"></a>
+                        <a href="https://play.google.com/store/tv/show?amp=&amp=&cdid=tvseason-tA4HgPLTK0a3r_BGVPCMuQ&gdid=tvepisode-tMn7WbYtC4Y&gl=US&hl=en&id=HlmO2RZtk_E"
+                            target="_blank"><img src="/assets/platforms/google.png" height="40px"
+                                class="rounded float-left" alt="Google"></a>
+                        <a href="https://www.amazon.com/gp/product/B00X9LWQ9K?creativeASIN=B00X9LWQ9K&ie=UTF8&linkCode=xm2&tag=utellycom00-21"
+                            target="_blank"><img src="/assets/platforms/prime.png" height="40px"
+                                class="rounded float-left" alt="Prime"></a>
+                        <a href="https://www.youtube.com/channel/UCVmFdp0CSRyvSCAsQjwkRuA" target="_blank"><img
+                                src="/assets/platforms/youtube.png" height="40px" class="rounded float-left"
+                                alt="YouTube"></a>
+                    </div>
                 </div>
             </div>
+            {{!-- Most Popular Card End --}}
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-4">
+            {{!-- Most Popular Card Start --}}
             <div class="card mx-auto">
                 <div class="card-body">
                     <h5 class="card-title">Schitt's Creek</h5>
-                    <div class="platforms">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                    </div>
-                    <hr>
+
                     <p class="card-text">In the sitcom "Schitt's Creek," a wealthy couple -- video store magnate
                         Johnny
                         and his soap opera star wife Moira <span id="dots">...</span><span id="more">-- suddenly
@@ -189,26 +213,40 @@
                             spoiled
                             children in tow and their pampered lives behind them, the Rose family is forced to face
                             their newfound poverty head-on and come together as a family to survive.</span>
-                        <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
-                            more</button>
+                        {{!-- <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
+                            more</button> --}}
+
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#popularCardModal"
+                            id="myBtn">
+                            Read more
+                        </button>
                     </p>
-
-
-                    <a href="#" class="card-link centered">Watch Now!</a>
+                    <hr>
+                    <p>Watch now on:</p>
+                    <div class="platforms">
+                        <a href="https://www.netflix.com/title/80036165" target="_blank"><img
+                                src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left"
+                                alt="Netflix"></a>
+                        <a href="https://play.google.com/store/tv/show?amp=&amp=&cdid=tvseason-tA4HgPLTK0a3r_BGVPCMuQ&gdid=tvepisode-tMn7WbYtC4Y&gl=US&hl=en&id=HlmO2RZtk_E"
+                            target="_blank"><img src="/assets/platforms/google.png" height="40px"
+                                class="rounded float-left" alt="Google"></a>
+                        <a href="https://www.amazon.com/gp/product/B00X9LWQ9K?creativeASIN=B00X9LWQ9K&ie=UTF8&linkCode=xm2&tag=utellycom00-21"
+                            target="_blank"><img src="/assets/platforms/prime.png" height="40px"
+                                class="rounded float-left" alt="Prime"></a>
+                        <a href="https://www.youtube.com/channel/UCVmFdp0CSRyvSCAsQjwkRuA" target="_blank"><img
+                                src="/assets/platforms/youtube.png" height="40px" class="rounded float-left"
+                                alt="YouTube"></a>
+                    </div>
                 </div>
             </div>
+            {{!-- Most Popular Card End --}}
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-4">
+            {{!-- Most Popular Card Start --}}
             <div class="card mx-auto">
                 <div class="card-body">
                     <h5 class="card-title">Schitt's Creek</h5>
-                    <div class="platforms">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                    </div>
-                    <hr>
+
                     <p class="card-text">In the sitcom "Schitt's Creek," a wealthy couple -- video store magnate
                         Johnny
                         and his soap opera star wife Moira <span id="dots">...</span><span id="more">-- suddenly
@@ -219,26 +257,40 @@
                             spoiled
                             children in tow and their pampered lives behind them, the Rose family is forced to face
                             their newfound poverty head-on and come together as a family to survive.</span>
-                        <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
-                            more</button>
+                        {{!-- <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
+                            more</button> --}}
+
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#popularCardModal"
+                            id="myBtn">
+                            Read more
+                        </button>
                     </p>
-
-
-                    <a href="#" class="card-link centered">Watch Now!</a>
+                    <hr>
+                    <p>Watch now on:</p>
+                    <div class="platforms">
+                        <a href="https://www.netflix.com/title/80036165" target="_blank"><img
+                                src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left"
+                                alt="Netflix"></a>
+                        <a href="https://play.google.com/store/tv/show?amp=&amp=&cdid=tvseason-tA4HgPLTK0a3r_BGVPCMuQ&gdid=tvepisode-tMn7WbYtC4Y&gl=US&hl=en&id=HlmO2RZtk_E"
+                            target="_blank"><img src="/assets/platforms/google.png" height="40px"
+                                class="rounded float-left" alt="Google"></a>
+                        <a href="https://www.amazon.com/gp/product/B00X9LWQ9K?creativeASIN=B00X9LWQ9K&ie=UTF8&linkCode=xm2&tag=utellycom00-21"
+                            target="_blank"><img src="/assets/platforms/prime.png" height="40px"
+                                class="rounded float-left" alt="Prime"></a>
+                        <a href="https://www.youtube.com/channel/UCVmFdp0CSRyvSCAsQjwkRuA" target="_blank"><img
+                                src="/assets/platforms/youtube.png" height="40px" class="rounded float-left"
+                                alt="YouTube"></a>
+                    </div>
                 </div>
             </div>
+            {{!-- Most Popular Card End --}}
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-4">
+            {{!-- Most Popular Card Start --}}
             <div class="card mx-auto">
                 <div class="card-body">
                     <h5 class="card-title">Schitt's Creek</h5>
-                    <div class="platforms">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                    </div>
-                    <hr>
+
                     <p class="card-text">In the sitcom "Schitt's Creek," a wealthy couple -- video store magnate
                         Johnny
                         and his soap opera star wife Moira <span id="dots">...</span><span id="more">-- suddenly
@@ -249,26 +301,40 @@
                             spoiled
                             children in tow and their pampered lives behind them, the Rose family is forced to face
                             their newfound poverty head-on and come together as a family to survive.</span>
-                        <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
-                            more</button>
+                        {{!-- <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
+                            more</button> --}}
+
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#popularCardModal"
+                            id="myBtn">
+                            Read more
+                        </button>
                     </p>
-
-
-                    <a href="#" class="card-link centered">Watch Now!</a>
+                    <hr>
+                    <p>Watch now on:</p>
+                    <div class="platforms">
+                        <a href="https://www.netflix.com/title/80036165" target="_blank"><img
+                                src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left"
+                                alt="Netflix"></a>
+                        <a href="https://play.google.com/store/tv/show?amp=&amp=&cdid=tvseason-tA4HgPLTK0a3r_BGVPCMuQ&gdid=tvepisode-tMn7WbYtC4Y&gl=US&hl=en&id=HlmO2RZtk_E"
+                            target="_blank"><img src="/assets/platforms/google.png" height="40px"
+                                class="rounded float-left" alt="Google"></a>
+                        <a href="https://www.amazon.com/gp/product/B00X9LWQ9K?creativeASIN=B00X9LWQ9K&ie=UTF8&linkCode=xm2&tag=utellycom00-21"
+                            target="_blank"><img src="/assets/platforms/prime.png" height="40px"
+                                class="rounded float-left" alt="Prime"></a>
+                        <a href="https://www.youtube.com/channel/UCVmFdp0CSRyvSCAsQjwkRuA" target="_blank"><img
+                                src="/assets/platforms/youtube.png" height="40px" class="rounded float-left"
+                                alt="YouTube"></a>
+                    </div>
                 </div>
             </div>
+            {{!-- Most Popular Card End --}}
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-4">
+            {{!-- Most Popular Card Start --}}
             <div class="card mx-auto">
                 <div class="card-body">
                     <h5 class="card-title">Schitt's Creek</h5>
-                    <div class="platforms">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                    </div>
-                    <hr>
+
                     <p class="card-text">In the sitcom "Schitt's Creek," a wealthy couple -- video store magnate
                         Johnny
                         and his soap opera star wife Moira <span id="dots">...</span><span id="more">-- suddenly
@@ -279,26 +345,40 @@
                             spoiled
                             children in tow and their pampered lives behind them, the Rose family is forced to face
                             their newfound poverty head-on and come together as a family to survive.</span>
-                        <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
-                            more</button>
+                        {{!-- <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
+                            more</button> --}}
+
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#popularCardModal"
+                            id="myBtn">
+                            Read more
+                        </button>
                     </p>
-
-
-                    <a href="#" class="card-link centered">Watch Now!</a>
+                    <hr>
+                    <p>Watch now on:</p>
+                    <div class="platforms">
+                        <a href="https://www.netflix.com/title/80036165" target="_blank"><img
+                                src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left"
+                                alt="Netflix"></a>
+                        <a href="https://play.google.com/store/tv/show?amp=&amp=&cdid=tvseason-tA4HgPLTK0a3r_BGVPCMuQ&gdid=tvepisode-tMn7WbYtC4Y&gl=US&hl=en&id=HlmO2RZtk_E"
+                            target="_blank"><img src="/assets/platforms/google.png" height="40px"
+                                class="rounded float-left" alt="Google"></a>
+                        <a href="https://www.amazon.com/gp/product/B00X9LWQ9K?creativeASIN=B00X9LWQ9K&ie=UTF8&linkCode=xm2&tag=utellycom00-21"
+                            target="_blank"><img src="/assets/platforms/prime.png" height="40px"
+                                class="rounded float-left" alt="Prime"></a>
+                        <a href="https://www.youtube.com/channel/UCVmFdp0CSRyvSCAsQjwkRuA" target="_blank"><img
+                                src="/assets/platforms/youtube.png" height="40px" class="rounded float-left"
+                                alt="YouTube"></a>
+                    </div>
                 </div>
             </div>
+            {{!-- Most Popular Card End --}}
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-4">
+            {{!-- Most Popular Card Start --}}
             <div class="card mx-auto">
                 <div class="card-body">
                     <h5 class="card-title">Schitt's Creek</h5>
-                    <div class="platforms">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                    </div>
-                    <hr>
+
                     <p class="card-text">In the sitcom "Schitt's Creek," a wealthy couple -- video store magnate
                         Johnny
                         and his soap opera star wife Moira <span id="dots">...</span><span id="more">-- suddenly
@@ -309,26 +389,40 @@
                             spoiled
                             children in tow and their pampered lives behind them, the Rose family is forced to face
                             their newfound poverty head-on and come together as a family to survive.</span>
-                        <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
-                            more</button>
+                        {{!-- <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
+                            more</button> --}}
+
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#popularCardModal"
+                            id="myBtn">
+                            Read more
+                        </button>
                     </p>
-
-
-                    <a href="#" class="card-link centered">Watch Now!</a>
+                    <hr>
+                    <p>Watch now on:</p>
+                    <div class="platforms">
+                        <a href="https://www.netflix.com/title/80036165" target="_blank"><img
+                                src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left"
+                                alt="Netflix"></a>
+                        <a href="https://play.google.com/store/tv/show?amp=&amp=&cdid=tvseason-tA4HgPLTK0a3r_BGVPCMuQ&gdid=tvepisode-tMn7WbYtC4Y&gl=US&hl=en&id=HlmO2RZtk_E"
+                            target="_blank"><img src="/assets/platforms/google.png" height="40px"
+                                class="rounded float-left" alt="Google"></a>
+                        <a href="https://www.amazon.com/gp/product/B00X9LWQ9K?creativeASIN=B00X9LWQ9K&ie=UTF8&linkCode=xm2&tag=utellycom00-21"
+                            target="_blank"><img src="/assets/platforms/prime.png" height="40px"
+                                class="rounded float-left" alt="Prime"></a>
+                        <a href="https://www.youtube.com/channel/UCVmFdp0CSRyvSCAsQjwkRuA" target="_blank"><img
+                                src="/assets/platforms/youtube.png" height="40px" class="rounded float-left"
+                                alt="YouTube"></a>
+                    </div>
                 </div>
             </div>
+            {{!-- Most Popular Card End --}}
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-4">
+            {{!-- Most Popular Card Start --}}
             <div class="card mx-auto">
                 <div class="card-body">
                     <h5 class="card-title">Schitt's Creek</h5>
-                    <div class="platforms">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                        <img src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left" alt="...">
-                    </div>
-                    <hr>
+
                     <p class="card-text">In the sitcom "Schitt's Creek," a wealthy couple -- video store magnate
                         Johnny
                         and his soap opera star wife Moira <span id="dots">...</span><span id="more">-- suddenly
@@ -339,22 +433,133 @@
                             spoiled
                             children in tow and their pampered lives behind them, the Rose family is forced to face
                             their newfound poverty head-on and come together as a family to survive.</span>
-                        <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
-                            more</button>
+                        {{!-- <button type="button" class="btn btn-link" onclick="myFunction()" id="myBtn">Read
+                            more</button> --}}
+
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#popularCardModal"
+                            id="myBtn">
+                            Read more
+                        </button>
                     </p>
-
-
-                    <a href="#" class="card-link centered">Watch Now!</a>
+                    <hr>
+                    <p>Watch now on:</p>
+                    <div class="platforms">
+                        <a href="https://www.netflix.com/title/80036165" target="_blank"><img
+                                src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left"
+                                alt="Netflix"></a>
+                        <a href="https://play.google.com/store/tv/show?amp=&amp=&cdid=tvseason-tA4HgPLTK0a3r_BGVPCMuQ&gdid=tvepisode-tMn7WbYtC4Y&gl=US&hl=en&id=HlmO2RZtk_E"
+                            target="_blank"><img src="/assets/platforms/google.png" height="40px"
+                                class="rounded float-left" alt="Google"></a>
+                        <a href="https://www.amazon.com/gp/product/B00X9LWQ9K?creativeASIN=B00X9LWQ9K&ie=UTF8&linkCode=xm2&tag=utellycom00-21"
+                            target="_blank"><img src="/assets/platforms/prime.png" height="40px"
+                                class="rounded float-left" alt="Prime"></a>
+                        <a href="https://www.youtube.com/channel/UCVmFdp0CSRyvSCAsQjwkRuA" target="_blank"><img
+                                src="/assets/platforms/youtube.png" height="40px" class="rounded float-left"
+                                alt="YouTube"></a>
+                    </div>
                 </div>
+            </div>
+            {{!-- Most Popular Card End --}}
+        </div>
+    </div>
+
+
+</div>
+{{!-- Most Popular End --}}
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+
+<div class="modal fade bd-example-modal-xl" id="popularCardModal" tabindex="-1" role="dialog"
+    aria-labelledby="popularCardModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popularCardModalTitle">Schitt's Creek</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body col 12">
+                <div class="showPoster col-8">
+                    <img src="/assets/posters/SchittsCreek.jpg" width="713" height="401" class="rounded float-left"
+                        alt="Schitt's Creek">
+                </div>
+                <div class="col-1"></div>
+                <div class="showDesc col-4">
+                    <p>In the sitcom "Schitt's Creek," a wealthy couple -- video store magnate Johnny and his soap opera
+                        star
+                        wife Moira-- suddenly find themselves completely broke. With only one remaining asset, a small
+                        town
+                        called Schitt's Creek, which the Roses bought years earlier as a joke, this once-wealthy couple
+                        must
+                        give up life as they know it. With their two spoiled children in tow and their pampered lives
+                        behind
+                        them, the Rose family is forced to face their newfound poverty head-on and come together as a
+                        family
+                        to
+                        survive.</p>
+                    <hr>
+                    <p>Watch now on:</p>
+                    <div class="platforms">
+                        <a href="https://www.netflix.com/title/80036165" target="_blank"><img
+                                src="/assets/platforms/Netflix.png" height="40px" class="rounded float-left"
+                                alt="Netflix"></a>
+                        <a href="https://play.google.com/store/tv/show?amp=&amp=&cdid=tvseason-tA4HgPLTK0a3r_BGVPCMuQ&gdid=tvepisode-tMn7WbYtC4Y&gl=US&hl=en&id=HlmO2RZtk_E"
+                            target="_blank"><img src="/assets/platforms/google.png" height="40px"
+                                class="rounded float-left" alt="Google"></a>
+                        <a href="https://www.amazon.com/gp/product/B00X9LWQ9K?creativeASIN=B00X9LWQ9K&ie=UTF8&linkCode=xm2&tag=utellycom00-21"
+                            target="_blank"><img src="/assets/platforms/prime.png" height="40px"
+                                class="rounded float-left" alt="Prime"></a>
+                        <a href="https://www.youtube.com/channel/UCVmFdp0CSRyvSCAsQjwkRuA" target="_blank"><img
+                                src="/assets/platforms/youtube.png" height="40px" class="rounded float-left"
+                                alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
-{{!-- Most Popular End --}}
 
+{{!-- <div class="modal fade bd-example-modal-xl" id="popularCardModal" tabindex="-1" role="dialog"
+    aria-labelledby="popularCardModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popularCardModalTitle">Schitt's Creek</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <img src="/assets/posters/SchittsCreek.jpg" class="rounded float-left" alt="Schitt's Creek">
+                </div>
+
+                <p>In the sitcom "Schitt's Creek," a wealthy couple -- video store magnate Johnny and his soap opera
+                    star
+                    wife Moira-- suddenly find themselves completely broke. With only one remaining asset, a small town
+                    called Schitt's Creek, which the Roses bought years earlier as a joke, this once-wealthy couple must
+                    give up life as they know it. With their two spoiled children in tow and their pampered lives behind
+                    them, the Rose family is forced to face their newfound poverty head-on and come together as a family
+                    to
+                    survive.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div> --}}
 
 {{!-- Javascript and jQuery --}}
-<script>
+{{!-- <script>
     function myFunction() {
         var dots = document.getElementById("dots");
         var moreText = document.getElementById("more");
@@ -369,7 +574,7 @@
             btnText.innerHTML = "Read less";
             moreText.style.display = "inline";
         }
-    }
+    } --}}
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="/js/dashboard.js"></script>

@@ -298,6 +298,7 @@ input {
 
 .btn-login {
     background-color: #b30000;
+    font-family: "Unica one", cursive;
     outline: none;
     color: #fff;
     font-size: 18px;
@@ -310,6 +311,26 @@ input {
 
 .btn-login:hover,
 .btn-login:focus {
+    color: #fff;
+    background-color: #ff8080;
+    border-color: #ff8080;
+}
+
+#submit {
+    background-color: #b30000;
+    font-family: "Unica one", cursive;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    /* border-color: #59B2E6; */
+}
+
+#submit:hover,
+#submit:focus {
     color: #fff;
     background-color: #ff8080;
     border-color: #ff8080;
@@ -415,7 +436,7 @@ input {
 }
 
 .platforms {
-    margin-bottom: 70px;
+    margin-top: 10px;
 }
 
 .rounded {
@@ -495,7 +516,7 @@ input {
     width: max-content;
 }
 
-#submit {
+#reviewSubmitBtn {
     background-color: #ff8080;
     font-family: 'Unica One', cursive;
     font-size: 18px;
@@ -505,8 +526,26 @@ input {
 }
 
 
-#submit:hover,
-#submit:focus {
+#reviewSubmitBtn:hover,
+#reviewSubmitBtn:focus {
     color: #fff;
     background-color: #b30000;
+}
+
+/* Forms */
+.error {
+    color: red;
+    margin-left: 5px;
+}
+
+label.error {
+    display: inline;
+}
+
+.showPoster {
+    float: left;
+}
+
+.showDesc {
+    float: left;
 }

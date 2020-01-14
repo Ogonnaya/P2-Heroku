@@ -5,6 +5,7 @@ var jwt = require("jsonwebtoken");
 
 module.exports = function(app) {
   /* LOGIN/REGISTER ==================================================================== */
+  //Register
   app.post("/register", function(req, res) {
     var userData = {
       firstName: req.body.firstName,
@@ -27,23 +28,22 @@ module.exports = function(app) {
           userData.password = hashedPassword;
           db.User.create(userData)
             .then(function(user) {
-              //   console.log(process.env);
-
-              var token = jwt.sign(
-                user.dataValues,
-                process.env.SESSION_SECRET,
-                {
-                  expiresIn: 1440
-                }
-              );
-              //   res.json({ token: token });
+              jwt.sign({ id: user.id }, process.env.SESSION_SECRET, function(
+                token
+              ) {
+                res
+                  .status(200)
+                  .cookie("jwt", token, { expiresIn: 864000 })
+                  .res.json({ token: token });
+              });
               res.redirect("/dashboard");
             })
             .catch(function(err) {
               res.send("error: " + err);
             });
         } else {
-          res.json({ error: "User already exists" });
+          //   res.json({ error: "User already exists" }); //TODO: User already exists
+          res.redirect("/");
         }
       })
       .catch(function(err) {
@@ -60,18 +60,20 @@ module.exports = function(app) {
     })
       .then(function(user) {
         if (!user) {
-          return res.status(404).send("User Not Found."); // TODO: User not found message
+          //   return res.status(404).send("User Not Found."); // TODO: User not found message
+          return res.status(404).redirect("/");
         }
         var validPassword = bcrypt.compareSync(
           req.body.password,
           user.password
         );
         if (!validPassword) {
-          return res.status(401).send({
-            auth: false,
-            accessToken: null,
-            reason: "Invalid Password" // TODO: Invalid password message
-          });
+          return res.status(401).redirect("/"); // TODO: Invalid password message
+          //   return res.status(401).send({
+          //     auth: false,
+          //     accessToken: null,
+          //     reason: "Invalid Password"
+          //   });
         } else {
           jwt.sign({ id: user.id }, process.env.SESSION_SECRET, function(
             token
