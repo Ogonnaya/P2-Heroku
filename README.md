@@ -4,7 +4,7 @@
 
 Trouver App is a simple web application which fixes the problem of locating the available streaming services for a given piece of media (either movie or television). It allows the user to avoid having to juggle between numerous services to find the content they wish to view.
 
-#### Try it out '''[Trouver](http://https://obscure-depths-57461.herokuapp.com/)'''
+#### Try it out: [Trouver](http://https://obscure-depths-57461.herokuapp.com/)
 
 Emai: demo@trouverdemo.com
 
