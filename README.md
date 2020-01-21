@@ -8,9 +8,9 @@ Trouver App is a simple web application which fixes the problem of locating the 
 
 [Trouver](http://https://obscure-depths-57461.herokuapp.com/)
 
-```Emai: demo@trouverdemo.com```
+Emai: demo@trouverdemo.com
 
-```Password: demopassword1234```
+Password: demopassword1234
 
 <p align="center">
   <img alt='Trouver' src="https://github.com/Ogonnaya/P2-Heroku/blob/master/public/assets/trouver.jpg"></br>
