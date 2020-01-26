@@ -10,10 +10,6 @@ Emai: demo@trouverdemo.com
 
 Password: demopassword1234
 
-<p align="center">
-  <img alt='Trouver' src="https://github.com/Ogonnaya/P2-Heroku/blob/master/public/assets/trouver.jpg"></br>
-</p>
-
 ### Built With
 
 #### Languages | Frameworks
